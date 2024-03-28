@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Java script Demo</title>
+    <style>
+        table, th, td {
+          border: solid 1px black;
+          font-size: large;
+        }
+
+        section{
+            padding: 2%;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -11,11 +21,28 @@
     </header>
     <main style="background-color: pink; height: 600px;">
        <p id="paragraph1"></p>
-       <section id="sectionOne">
+       <section id="sectionOne" style="padding: 2%;">
+         <form action="" id="taskForm">
+            <label for="task"> Enter your task </label>
+            <input type="text" id="task" name="task" required>
+            <br>
+            <!-- <label for="">Enter the date </label>
+            <input type="text" id="date" name="date"> -->
+            <br>
+            <input type="submit" value="Save">
 
+       
+         </form>
        </section>
-       <section>
+       <section id="sectionTwo" >
+        <table id="tasksTable">
+            <tr>
+                <th>Task</th>
+                <!-- <th>date</th> -->
 
+            </tr>
+        </table>
+         <!-- <button onclick="">Click me</button> -->
        </section>
     </main>
     <footer style="background-color: grey; height: 200px;">
